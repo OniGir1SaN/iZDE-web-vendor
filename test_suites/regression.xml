@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Regression" parallel="classes" thread-count="7">
+       <test name="iZDE vendor" verbose="2" preserve-order="true">
+        <classes>
+            <class name="iZDEvendor.LoginTestV"></class>
+            <class name="iZDEvendor.MainMenuTestV"></class>
+            <class name="iZDEvendor.LocationsTest"></class>
+            <class name="iZDEvendor.CreateObjectsTest.FacilityDescriptionTest"></class>
+            <class name="iZDEvendor.CreateObjectsTest.DetailObjectTest"></class>
+            <class name="iZDEvendor.CreateObjectsTest.AddPictureTest"></class>
+        </classes>
+    </test>
+</suite>
