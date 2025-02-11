@@ -2,7 +2,6 @@ package com.demoqa.pages.iZDEvendor;
 
 import com.demoqa.entities.iZDEvendor.LoginEntityV;
 import com.demoqa.pages.BasePage;
-import com.demoqa.pages.iZDE.LoginPage;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
@@ -43,10 +42,10 @@ public class LoginPageV extends BasePage {
         return "";
     }
 
-    public LoginPage fillUpLoginForm(LoginEntityV loginEntityV) {
+    public LoginPageV fillUpLoginForm(LoginEntityV loginEntityV) {
         webElementActions.sendKeys(emailOrPhoneInput, loginEntityV.getEmailOrPhone())
                 .sendKeysWithEnter(passwordInput, loginEntityV.getPassword());
-        return new LoginPage();
+        return new LoginPageV();
     }
 
     public void verifyEmailAndPasswordPlaceholders() {
